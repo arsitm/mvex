@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Vamsi\Vex\Command\VexCommand;
+use Arsitm\Mvex\Command\MapCommand;
+
+$application = new Application('Mvex', '0.1');
+$application->add(new VexCommand());
+$application->add(new MapCommand());
+$application->run();

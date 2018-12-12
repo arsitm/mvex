@@ -1,0 +1,19 @@
+{
+    "name": "arsitm/mvex",
+    "description": "A small app to make some load via requests a web application by links from sitemap.xml.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Arsitm\\": "src/Arsitm"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-simplexml": "*",
+        "vamsiikrishna/vex": "dev-master"
+    },
+    "bin": [
+        "bin/mvex"
+    ]
+}
